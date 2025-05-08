@@ -49,6 +49,14 @@ body{
   text-align: left;
 }
 
+.text-h1 {
+  font-weight: 530;
+  font-size: 36px; /* Ajuste o tamanho da fonte para torná-lo maior */
+  color: #333; /* Cor do texto */
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Sombra suave para destacar o texto */
+  text-align: center; /* Centralizar o texto horizontalmente */
+}
+
 .navigation{
     display: flex;
     align-items: center;
@@ -130,15 +138,9 @@ body{
         background-attachment: scroll;
         margin-top: 200px;
         transform: scale(0.7);
-
     }
 }
-@media screen and (orientation: landscape) and (min-width: 543px) and (max-width:1099px){
-    .home-text {
-      transform: scale(0.);
 
-    }
-}
 
 .card{
     border: none;
@@ -205,6 +207,8 @@ body{
     margin-bottom: 1rem;
     text-align: left; /* Alinha o texto à esquerda */
 }
+
+
 
 .home-text .text-h1 {
     font-size: 3rem;
@@ -286,6 +290,8 @@ body{
         text-align: center;
         overflow: hidden;
         gap: 5rem;
+        background-position: calc(50% - 120px) center;
+               
     }
     .home .text-h4{
         font-size: 15px;
@@ -318,6 +324,13 @@ body{
 }
 .footer-inner{
     padding-bottom: 75px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-list-item {
+  margin-top: 3%;
 }
 .footer-list-item ul li{
     font-size: 16px;
@@ -400,14 +413,7 @@ body{
         color: #4CAF50;
         }
 
-        .conteudo {
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-evenly;
-        color: var(--color02);
-        }
+        
 
         @keyframes pisca {
         100% {
@@ -987,6 +993,12 @@ testimonial-section{
   html {
     font-size: 80%;
   }
+
+  .footer-list-item {
+    scale: 1.1;
+  }
+
+
   /* about */
   .about p,
   .service p,
@@ -1162,6 +1174,47 @@ testimonial-section{
   transform: scale(1.05);
 }
 
+@media (max-width: 450px) {
+  #nome {
+    width: 28rem;
+    font-size: 27px;        
 
+  }
+  .text-h1 {
+    font-size: 27px;
+  }
+
+  /* Define a class to reduce the image size */
+  .small-image {
+    max-width: 50%; /* You can adjust this percentage to control the size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  
+
+  .footer-p {
+    margin-left: 6%;
+  }
+
+  
+}
+
+@media (max-width: 370px) {
+  #nome {
+    width: 25rem;
+    font-size: 24px;   
+    margin-bottom: 12px;     
+
+  }
+  .text-h1 {
+    font-size: 24px;
+  }
+  .footer{
+    padding-right: 10px;
+  }
+  
+
+  
+}
       
       
